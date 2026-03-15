@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>Contact — Jason</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR  (active = Contact)
+  ============================================= -->
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main>
+    <div class="container">
+
+      <!-- ── PAGE HEADING ────────────────────── -->
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Let's connect!</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- ── LEFT: direct links ────────────── -->
+        <div class="contact-info">
+          <h2>:)</h2>
+
+          <!-- Short description -->
+          <p>
+            I'm currently open to new opportunities, collaborations and projects.<br />
+            Feel free to reach out any time.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="https://github.com/Jason-CJS" target="_blank" class="contact-link">
+              <!-- <span class="contact-link-icon">😼</span> -->
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/Jason-CJS</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/jason-cjs" target="_blank" class="contact-link">
+              <!-- <span class="contact-link-icon">💼</span> -->
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/jason-cjs</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── RIGHT: contact form ───────────── -->
+        <div class="contact-form">
+          <form id="contact-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text"  id="name"  name="name"
+                       placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@mail.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject"
+                     placeholder="What's this about?" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"
+                        placeholder="Your message…" required></textarea>
+            </div>
+
+            <!-- Status message (shown by JS) -->
+            <div id="form-status"></div>
+
+            <button type="submit" id="submit-btn" class="form-submit">
+              Send Message →
+            </button>
+
+          </form>
+        </div>
+
+      </div><!-- /contact-grid -->
+    </div><!-- /container -->
+  </main>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer>
+    <p>© 2026 Jason-CJS</p>
+    <div class="footer-links">
+      <a href="https://github.com/Jason-CJS" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/jason-cjs" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

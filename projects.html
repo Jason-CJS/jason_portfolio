@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title -->
+  <title>Projects — Jason</title>
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR  (active = Projects)
+  ============================================= -->
+  <nav id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main>
+    <div class="container">
+
+      <!-- ── PAGE HEADING ────────────────────── -->
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p>Always curious, always learning.</p>
+      </div>
+
+
+      <!-- ── PROJECTS GRID ─────────────────────
+           Copy one .project-card block to add a project.
+           Remove a block to remove one.
+      ──────────────────────────────────────── -->
+      <div class="projects-grid">
+
+
+        <!-- ── PROJECT 1 ── -->
+        <div class="project-card">
+
+          <!-- OPTION A — placeholder: -->
+          <div class="project-thumb-placeholder">⛓️</div>
+
+          <!-- OPTION B — your actual screenshot: -->
+            <!-- <img src="screenshot-project1.jpg" class="project-thumb" alt="Project 1" /> -->
+
+          <div class="project-body">
+            <!-- Project name -->
+            <h3>RAG Application</h3>
+
+            <!-- Description -->
+            <p>
+              Developed an end-to-end Retrieval-Augmented Generation (RAG) application on Databricks.
+              Utilised LangChain to integrate LLMs with external uploadable PDF files, enabling dynamic information retrieval and generation.
+            </p>
+
+            <div class="project-links">
+              <a href="https://github.com/Jason-CJS/RAG-App" target="_blank" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ── PROJECT 2 ── -->
+        <div class="project-card">
+          <div class="project-thumb-placeholder">🕵️</div>
+          <div class="project-body">
+            <h3>Threat Detection with LLM</h3>
+            <p>
+              Extended an open-source Threat Detection Demo from GitHub.
+              Modified the previously rule-based logic for threat detection with a LLM-based approach on Databricks.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Jason-CJS/Threat-Detection-With-LLM" target="_blank" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ── PROJECT 3 ── -->
+        <!-- <div class="project-card">
+          <div class="project-thumb-placeholder">🎨</div>
+          <div class="project-body">
+            <h3>Project 3</h3>
+            <p>
+              Description
+            </p>
+            <div class="project-links">
+              <a href="#" target="_blank" class="btn btn-primary">Live →</a>
+              <a href="#" target="_blank" class="btn">GitHub</a>
+            </div>
+          </div>
+        </div> -->
+
+
+      </div><!-- /projects-grid -->
+    </div><!-- /container -->
+  </main>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer>
+    <p>© 2026 Jason-CJS</p>
+    <div class="footer-links">
+      <a href="https://github.com/Jason-CJS" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/jason-cjs" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
